@@ -33,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
         int phoneNumber = preferences.getInt("phoneNumber", -1);  // -1 return if preference does not exist
         String username = preferences.getString("username", "");  // return empty if preference does not exist.
 
-        Log.i("PhoneNumber", phoneNumber+ "");
-        Log.i("UserName", username);
+        Log.i("GetData", phoneNumber+ "");
+        Log.i("GetData", username);
 
         Toast.makeText(this, phoneNumber + " - " + username, Toast.LENGTH_SHORT).show();
     }
